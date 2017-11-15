@@ -1,12 +1,120 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="build/css/vendor.css" rel="stylesheet" type="text/css">
-    <script src="build/js/vendor.min.js"></script>
-    <script type="text/javascript" src="build/js/app.js"></script>
-    <title>Rename</title>
-  </head>
-  <body>
+<head>
+  <link href="css/master.css" rel="stylesheet" type="text/css">
+  <script src="build/js/vendor.min.js"></script>
+  <script type="text/javascript" src="build/js/app.js"></script>
+  <title>Rename</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Sudoku Checker</h1>
+    <form class="form">
+      <div class="grid">
+        <div class="square">
+          <input class="square1 row1 column1" type="number">
+          <input class="square1 row1 column2" type="number">
+          <input class="square1 row1 column3" type="number">
+          <input class="square1 row2 column1" type="number">
+          <input class="square1 row2 column2" type="number">
+          <input class="square1 row2 column3" type="number">
+          <input class="square1 row3 column1" type="number">
+          <input class="square1 row3 column2" type="number">
+          <input class="square1 row3 column3" type="number">
+        </div>
+        <div class="square">
+          <input class="square2 row1 column4" type="number">
+          <input class="square2 row1 column5" type="number">
+          <input class="square2 row1 column6" type="number">
+          <input class="square2 row2 column4" type="number">
+          <input class="square2 row2 column5" type="number">
+          <input class="square2 row2 column6" type="number">
+          <input class="square2 row3 column4" type="number">
+          <input class="square2 row3 column5" type="number">
+          <input class="square2 row3 column6" type="number">
+        </div>
+        <div class="square">
+          <input class="square3 row1 column7" type="number">
+          <input class="square3 row1 column8" type="number">
+          <input class="square3 row1 column9" type="number">
+          <input class="square3 row2 column7" type="number">
+          <input class="square3 row2 column8" type="number">
+          <input class="square3 row2 column9" type="number">
+          <input class="square3 row3 column7" type="number">
+          <input class="square3 row3 column8" type="number">
+          <input class="square3 row3 column9" type="number">
+        </div>
+        <div class="square">
+          <input class="square4 row4 column1" type="number">
+          <input class="square4 row4 column2" type="number">
+          <input class="square4 row4 column3" type="number">
+          <input class="square4 row5 column1" type="number">
+          <input class="square4 row5 column2" type="number">
+          <input class="square4 row5 column3" type="number">
+          <input class="square4 row6 column1" type="number">
+          <input class="square4 row6 column2" type="number">
+          <input class="square4 row6 column3" type="number">
+        </div>
+        <div class="square">
+          <input class="square5 row4 column4" type="number">
+          <input class="square5 row4 column5" type="number">
+          <input class="square5 row4 column6" type="number">
+          <input class="square5 row5 column4" type="number">
+          <input class="square5 row5 column5" type="number">
+          <input class="square5 row5 column6" type="number">
+          <input class="square5 row6 column4" type="number">
+          <input class="square5 row6 column5" type="number">
+          <input class="square5 row6 column6" type="number">
+        </div>
+        <div class="square">
+          <input class="square6 row4 column7" type="number">
+          <input class="square6 row4 column8" type="number">
+          <input class="square6 row4 column9" type="number">
+          <input class="square6 row5 column7" type="number">
+          <input class="square6 row5 column8" type="number">
+          <input class="square6 row5 column9" type="number">
+          <input class="square6 row6 column7" type="number">
+          <input class="square6 row6 column8" type="number">
+          <input class="square6 row6 column9" type="number">
+        </div>
+        <div class="square">
+          <input class="square7 row7 column1" type="number">
+          <input class="square7 row7 column2" type="number">
+          <input class="square7 row7 column3" type="number">
+          <input class="square7 row8 column1" type="number">
+          <input class="square7 row8 column2" type="number">
+          <input class="square7 row8 column3" type="number">
+          <input class="square7 row9 column1" type="number">
+          <input class="square7 row9 column2" type="number">
+          <input class="square7 row9 column3" type="number">
+        </div>
+        <div class="square">
+          <input class="square8 row7 column4" type="number">
+          <input class="square8 row7 column5" type="number">
+          <input class="square8 row7 column6" type="number">
+          <input class="square8 row8 column4" type="number">
+          <input class="square8 row8 column5" type="number">
+          <input class="square8 row8 column6" type="number">
+          <input class="square8 row9 column4" type="number">
+          <input class="square8 row9 column5" type="number">
+          <input class="square8 row9 column6" type="number">
+        </div>
+        <div class="square">
+          <input class="square9 row7 column7" type="number">
+          <input class="square9 row7 column8" type="number">
+          <input class="square9 row7 column9" type="number">
+          <input class="square9 row8 column7" type="number">
+          <input class="square9 row8 column8" type="number">
+          <input class="square9 row8 column9" type="number">
+          <input class="square9 row9 column7" type="number">
+          <input class="square9 row9 column8" type="number">
+          <input class="square9 row9 column9" type="number">
+        </div>
+      </div>
+      <button type="submit" name="button">Check</button>
+    </form>
+    <p id="output"></p>
+  </div>
 
-  </body>
+</body>
 </html>

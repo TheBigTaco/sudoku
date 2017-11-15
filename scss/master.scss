@@ -1,0 +1,140 @@
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: red;
+  animation: bgcolor 5s ease 0s infinite;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: monospace;
+  animation: rotate3d 5s ease-in-out 0s infinite;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 528px;
+  height: 528px;
+  border: 5px solid black;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px grey;
+  font-family: cursive;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  &:hover {
+    animation: buttonhover 2s ease 0s infinite;
+  }
+}
+
+input {
+  // border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255,255,255,0.6);
+  transition: transform 1s;
+  &:focus {
+    background-color: rgba(255,0,233,0.7);
+  }
+  &:hover {
+    transform: rotate(720deg);
+  }
+}
+
+.square {
+  border: 3px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 170px;
+  height: 170px;
+  background-color: darkgoldenrod;
+}
+
+#output {
+  font-size: 50px;
+  color: red;
+  font-family: cursive;
+}
+
+@keyframes bgcolor {
+  0% {
+    background: linear-gradient(45deg,rebeccapurple,cadetblue);
+  }
+  25% {
+    background: linear-gradient(45deg,rebeccapurple,rebeccapurple,forestgreen);
+  }
+  50% {
+    background: papayawhip;
+  }
+  75% {
+    background: navy;
+  }
+  100% {
+    background: lemonchiffon;
+  }
+}
+
+@keyframes buttonhover {
+  0% {
+    transform: scale(1);
+    background-color: red;
+  }
+  25% {
+    transform: scale(5) rotate(240deg);
+    background-color: orange;
+    border-radius: 100%;
+  }
+  50% {
+    transform: scale(1) rotate(-900deg);
+    background-color: blue;
+  }
+  75% {
+    transform: scale(98);
+    background-color: lemonchiffon;
+  }
+  100% {
+    transform: scale(5) rotate(-4deg);
+    background-color: green;
+  }
+}
+
+@keyframes rotate {
+  0% {
+
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate3d {
+  0% {
+    transform: rotate3d(0);
+  }
+  100% {
+    transform: rotate3d(1,1,1,360deg);
+  }
+}
